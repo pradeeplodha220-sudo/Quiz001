@@ -1,6 +1,6 @@
 package com.example.quiz001
 
-import android.app.Activity
+import androidx.activity.ComponentActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.ViewGroup
@@ -9,7 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import com.example.quiz001.api.AuthorizedQuizApi
 import kotlinx.coroutines.launch
 
-class MainActivity : Activity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val pad = (16 * resources.displayMetrics.density).toInt()
